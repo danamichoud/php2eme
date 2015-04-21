@@ -1,31 +1,33 @@
-<form name="formulaire" method="post" action="formule.php">
-    login:
-    <input name="login" type="text" size="15">
-    <br>
-    Mot de passe:
-    <input name="MotDePasse" type="password" size="15">
-    <br>
-    Majeur? :
-    <SELECT name="age" size="1">
-    <OPTION>oui
-    <OPTION>non
-    </SELECT>
-    <br>
-    Votre sexe? :
-    <SELECT name="sexe" size="1">
-    <OPTION>homme
-    <OPTION>femme
-    </SELECT>
-    <br>
-    Option:
-    <SELECT name="option" size="1">
-    <OPTION>Lettre de nouvelle
-    <OPTION>Membre de soutien
-    </SELECT>
-    <br>
-    <input name="submit" type="submit" value="Envoyer">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Le titre</title>
+  </head>
+  <body>
+    <form name="formulaire" method="post" action="formule.php">
+        login:<br>
+        <input name="login" type="text" size="15">
+        <br>
+        Mot de passe:<br>
+        <input name="password" type="password" size="15">
+        <br>
+        Majeur? :<br>
+        <select name="age" size="1">
+          <option value="1">oui</option>
+          <option value="0">non</option>
+        </select>
+        <br>
+        Votre sexe? :<br>
+        <input type="radio" name="sexe" value="F"> Femme
+        <input type="radio" name="sexe" value="H"> Homme
+        <br>
+        Option:<br>
+        <input type="checkbox" name="newsletter" value="1"> Newsletter
+        <input type="checkbox" name="membre" value="1"> membre de soutien
+        <br>
+        <input name="submit" type="submit" value="Envoyer">
+    </form>
 
-
-   
-    
+  </body>
+</html>
